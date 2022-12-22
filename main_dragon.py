@@ -4,7 +4,7 @@ import pygame
 
 pygame.init()
 pygame.key.set_repeat(200, 70)
-FPS = 10
+FPS = 15
 WIDTH = 200
 HEIGHT = 200
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
