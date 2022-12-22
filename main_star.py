@@ -62,6 +62,7 @@ def create_particles(position):
 # Главный Игровой цикл
 running = True
 while running:
+    WIDTH, HEIGHT = pygame.display.get_window_size()
     for event in pygame.event.get():
         if event.type == pygame.QUIT or \
                 (event.type == pygame.KEYUP and event.key == pygame.K_ESCAPE):
