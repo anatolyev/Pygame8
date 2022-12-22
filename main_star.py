@@ -9,7 +9,7 @@ FPS = 50
 clock = pygame.time.Clock()
 WIDTH = 400
 HEIGHT = 300
-screen = pygame.display.set_mode((WIDTH, HEIGHT), RESIZABLE)
+screen = pygame.display.set_mode((WIDTH, HEIGHT), FULLSCREEN)
 all_sprites = pygame.sprite.Group()
 pygame.mouse.set_visible(False)
 
