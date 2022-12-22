@@ -9,7 +9,7 @@ FPS = 50
 clock = pygame.time.Clock()
 WIDTH = 400
 HEIGHT = 300
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
+screen = pygame.display.set_mode((WIDTH, HEIGHT), RESIZABLE)
 all_sprites = pygame.sprite.Group()
 pygame.mouse.set_visible(False)
 
@@ -47,7 +47,7 @@ class Particle(pygame.sprite.Sprite):
         self.velocity[1] += self.gravity
         self.rect.x += self.velocity[0]
         self.rect.y += self.velocity[1]
-        screen_rect = (0, 0, WIDTH, HEIGHT)
+        screen_rect = (0, 0, *pygame.display.get_surface().get_size())
         if not self.rect.colliderect(screen_rect):
             self.kill()
 
